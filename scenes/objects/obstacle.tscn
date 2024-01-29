@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://74w3xrpkix12"]
+
+[ext_resource type="Texture2D" uid="uid://idi8a005mfnw" path="res://spike.png" id="1_n4bjq"]
+
+[node name="Obstacle" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_n4bjq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0.199999, 0.199999)
+scale = Vector2(1.00781, 1.00781)
+polygon = PackedVector2Array(16, 16, 0, -16, -16, 16)

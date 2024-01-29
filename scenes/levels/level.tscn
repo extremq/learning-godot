@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://6gudpq7r4p0a"]
+
+[ext_resource type="PackedScene" uid="uid://coimkslx2rgmn" path="res://scenes/player/player.tscn" id="1_8bsaa"]
+[ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_gynj7"]
+[ext_resource type="PackedScene" uid="uid://74w3xrpkix12" path="res://scenes/objects/obstacle.tscn" id="3_jjpxc"]
+
+[node name="Level" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_gynj7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Player" parent="." instance=ExtResource("1_8bsaa")]
+position = Vector2(93, 71)
+
+[node name="Obstacle" parent="." instance=ExtResource("3_jjpxc")]
+position = Vector2(265, 95)
+
+[node name="Obstacle6" parent="." instance=ExtResource("3_jjpxc")]
+position = Vector2(300, 94)
+
+[node name="Obstacle2" parent="." instance=ExtResource("3_jjpxc")]
+position = Vector2(175, 393)
+
+[node name="Obstacle3" parent="." instance=ExtResource("3_jjpxc")]
+position = Vector2(572, 286)
+
+[node name="Obstacle4" parent="." instance=ExtResource("3_jjpxc")]
+position = Vector2(849, 134)
+
+[node name="Obstacle5" parent="." instance=ExtResource("3_jjpxc")]
+position = Vector2(780, 532)
